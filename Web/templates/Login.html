@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alpha- Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website">
+  <meta name="keywords" content="Alpha, template, html, sass, jquery">
+  <meta name="author" content="Alpha Tanmoy">
+  <link rel="icon" href="{{url_for('static',filename='img/logo.png')}}" type="image/x-icon">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/LRstyle.css') }}">
+</head>
+<body class="Alpha">
+	<div class="page-content">
+		<div class="Alpha-content">
+			<div class="form-left">
+				<img src="{{url_for('static',filename='img/LR.png') }}" alt="form">
+			</div>
+			<form class="form-detail" action="/login" method="POST">
+				<h2>Login Now</h2>
+				{% if error %}
+					<p style="color: red">{{error}}</p>
+				{% endif %}
+				<div class="form-row">
+					<input type="text" name="username" id="username" class="input-text" placeholder="Username">
+				</div>
+				<div class="form-row">
+					<input type="password" name="password" id="password" class="input-text" placeholder="Password" required>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="Login" class="register" value="Login">
+				</div>
+				<h4>Dont Have an Account? <a href="/register">Register Now!</a></h4>
+				<h5 class="cls_a">Continue as a <a href="/">Guest!</a></h5>
+			</form>
+			
+		</div>
+	</div>
+</body>
+</html>

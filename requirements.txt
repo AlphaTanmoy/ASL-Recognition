@@ -1,0 +1,9 @@
+tensorflow
+keras
+split-folders
+numpy
+opencv-python
+tensorboard
+flask
+flask_mysqldb
+bcrypt

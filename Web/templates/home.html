@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Alpha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website">
+  <meta name="keywords" content="Alpha, template, html, sass, jquery">
+  <meta name="author" content="Alpha Tanmoy">
+  <link rel="icon" href="{{url_for('static',filename='img/logo.png')}}" type="image/x-icon">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/main.css') }}">
+  <style>
+    .custom-hr {
+        width: 500px; /* Set the desired width */
+        height: 5px; /* Set the height of the line */
+        background-color: blue; /* Set the color of the line */
+        border: none; /* Remove the default border */
+        margin: 50px auto; /* Set margin to center horizontally */
+    }
+</style>
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="127.0.0.1:5000">
+    <img src="{{url_for('static',filename='img/favicon.ico') }}" alt="Alpha">
+    <p>Alpha</p>
+  </a>
+  <p class="device-notification--message">ASL Recognition</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="">
+            <img src="{{url_for('static',filename='img/logo.png') }}" alt="Alpha">
+            <p>Alpha</p>
+          </a>
+          <button class="header--cta cta">Model Prediction</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Team</span></li>
+            <li><span>About</span></li>
+            <li><span>Contact</span></li>
+            <li><span>Model Prediction</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Your next<br>interactive<br>experience</h1>
+                <img src="{{url_for('static',filename='img/introduction-visual.png') }}" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>Tanmoy Das</h3>
+                  <p>Department of Computational Sciencecs. MCA, Brainware Univesity, BWU/MCA/22/046</p>
+                </a>
+                <a href="#0">
+                  <h3>Sukanya Bhattacharjee</h3>
+                  <p>Department of Computational Sciencecs. MCA, Brainware Univesity, BWU/MCA/22/038</p>
+                </a>
+                <a href="#0">
+                  <h3>Bhaskar Nandi</h3>
+                  <p>Department of Computational Sciencecs. MCA, Brainware Univesity, BWU/MCA/22/037</p>
+                </a>
+                <a href="#0">
+                  <h3>Soumik Choudhury</h3>
+                  <p>Department of Computational Sciencecs. MCA, Brainware Univesity, BWU/MCA/22/032</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Our Team</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{{url_for('static',filename='img/smk.png') }}" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Soumik Choudhury</p>
+                      <p class="slider--item-description">BWWU/MCA/22/032</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{{url_for('static',filename='img/me.png') }}" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Tanmoy Das</p>
+                      <p class="slider--item-description">BWWU/MCA/22/046</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{{url_for('static',filename='img/tua.png') }}" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Sukanya Bhattacharjee</p>
+                      <p class="slider--item-description">BWWU/MCA/22/038</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="{{url_for('static',filename='img/bsk.png') }}" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Bhaskar Nandi</p>
+                      <p class="slider--item-description">BWWU/MCA/22/037</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>We believe<br>in our Model<br>With 97.65%<br> Accuracy </h2>
+                <a href="#0">Graphs
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="{{url_for('static',filename='img/about-visual.png') }}" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="\image_view">
+                  <h3>Accuracy VS Iteration</h3>
+                </a>
+                <a href="\image_view">
+                  <h3>Epoch Accuracy</h3>
+                </a>
+                <a href="\image_view">
+                  <h3>Epoch Loss</h3>
+                </a>
+                <a href="\image_view">
+                  <h3>Loss VS iteration</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>Brainware University Kajipara</p>
+                    <a href="mailto:ouremail@gmail.com">dtanmoy169@gmail.com</a>
+                    <a href="tel:+91 8240570310">+91 00000 11111</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="#0">Feel</a></li>
+                    <li><a href="#0">Free To</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+              <h2>AS You are not Logged In You Cant Use The Prediction Please Login First</h2>
+              <h2>Click <a href="\login">HERE</a> for login</h2>
+             </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Team</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Model Working</li>
+    <p style="font-size:53px">You Are Not Logged In! <a href="/login">Login?</a></p>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{url_for("static",filename="js/vendor/jquery-2.2.4.min.js") }}"><\/script>')</script>
+<script src="{{url_for('static',filename='js/functions-min.js') }}"></script>
+</body>
+</html>
